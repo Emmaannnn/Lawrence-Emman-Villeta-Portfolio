@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link type="image/x-icon" rel="icon" href="Portfolio logos/dirty-white-box.png">
+    <title>Lawrence Emman | Website Portfolio</title>
+</head>
+
+<body class="bg-[#FFFFEF]">
+
+
+
+    <div id="welcome" class="hidden bg-[#028090] box-sizing border border-[#028090] fixed z-60 right-0 bottom-15 py-2 px-4 md:py-5 md:px-10 bg-[#028090] text-[#FFFFEF] rounded-tl-lg rounded-bl-lg hover:bg-[#0391a3]">
+        <h1 class="font-[Varela]">HELLO, WELCOME TO MY PORTFOLIO!</h1>
+    </div>
+
+
+    <!-- NAVIGATION -->
+    <nav id="navigation-bar" class="flex justify-center items-center fixed bg-[#FFFFEF] font-[Poppins] flex justify-between w-full z-99999">
+        <div class="container flex md:block p-2">
+            <!-- RESPONSIVE -->
+            <div class="md:hidden w-fit">
+                <button id="menu-toggle" class="text-xl focus:outline-none">☰</button>
+
+                <nav id="side-nav" class="hidden bg-[#028090] text-white shadow-md border-r border-[#028090] h-screen fixed top-0 left-0 min-w-[250px] py-6 px-4 overflow-auto z-[999]">
+                    <!-- Close Button -->
+                    <div class="flex justify-end -mt-3">
+                        <button id="closeBtn" class="text-gray-300 hover:text-white transition cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                <line x1="18" y1="6" x2="6" y2="18" />
+                                <line x1="6" y1="6" x2="18" y2="18" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Logo -->
+                    <div class="logo mt-4 font-[Mioge] text-[2rem] hover:text-[#028090] transition">
+                        <!-- <a href="#">VXLE</a> -->
+                        <a href="#" class="relative group w-[72px] h-auto">
+                            <img src="Portfolio logos/dirty-white.png" class="w-[72px] block group-hover:hidden" alt="default logo">
+                            <img src="Portfolio logos/blue-green.png" class="w-[72px] hidden group-hover:block"  alt="">
+                        </a>
+                    </div>
+
+                    <!-- Navigation Links -->
+                    <ul class="mt-6 space-y-2">
+                        <li>
+                            <a href="#about-me" class="font-medium text-[15px] block hover:text-[#028090] hover:bg-[#FFFFEF] rounded px-4 py-2 transition-all">ABOUT ME</a>
+                        </li>
+                        <li>
+                            <a href="#projects-portfolio" class="font-medium text-[15px] block hover:text-[#028090] hover:bg-[#FFFFEF] rounded px-4 py-2 transition-all">PROJECTS / PORTFOLIO</a>
+                        </li>
+                        <li>
+                            <a href="#" class="font-medium text-[15px] block hover:text-[#028090] hover:bg-[#FFFFEF] rounded px-4 py-2 transition-all">SKILLS</a>
+                        </li>
+                        <li>
+                            <a href="#" class="font-medium text-[15px] block hover:text-[#028090] hover:bg-[#FFFFEF] rounded px-4 py-2 transition-all">CONTACT ME</a>
+                        </li>
+                    </ul>
+
+                    <!-- Resume Section -->
+                    <div class="mt-6 text-center">
+                        <h6 class="text-xs mb-2">Downloadable CV</h6>
+                        <a href="Resume/Lawrence Emman Villeta - Resume.pdf" class="inline-flex p-3 items-center text-center border border-[#FFFFEF] text-[12px] hover:text-[#028090] hover:bg-[#FFFFEF] transition cursor-pointer px-2 rounded font-[500]" download> Resume / Downloadable CV
+                        </a>
+                    </div>
+                </nav>
+
+            </div>
+
+            <!-- PC RESOLUTION -->
+
+            <div class="flex justify-center md:justify-between w-full">
+                <div class="md:flex justify-center h-auto items-center logo md:w-50 font-[Mioge] text-[2rem] hover:text-[#028090] transition ">
+                    <a href="#" class="relative group w-[72px] h-auto">
+                        <img src="Portfolio logos/black.png" class="w-[72px] block group-hover:hidden" alt="default logo">
+                        <img src="Portfolio logos/blue-green.png" class="w-[72px] hidden group-hover:block"  alt="">
+                    </a>
+                </div>
+
+                <ul class="hidden md:flex justify-center gap-12 text-sm mt-3 font-[500]">
+                    <li><a href="#about-me" class="hover:text-[#028090] transition">ABOUT ME</a></li>
+                    <li><a href="#projects-portfolio" class="hover:text-[#028090] transition">PROJECTS / PORTFOLIO</a></li>
+                    <li><a href="#" class="hover:text-[#028090] transition">SKILLS</a></li>
+                    <li><a href="#" class="hover:text-[#028090] transition">CONTACT ME</a></li>
+                </ul>
+
+                <div class="flex justify-end">
+                    <a href="Resume/Lawrence Emman Villeta - Resume.pdf" class="hidden p-3 md:inline-flex items-center text-center border border-gray-400 text-[12px] hover:text-[#FFFFEF] hover:bg-[#028090] transition cursor-pointer px-2 rounded transition font-[500]" download>Downloadable CV</a>
+                </div>
+            </div>
+
+            <!-- FOR BALANCE -->
+            <div class="invisible md:hidden w-fit">
+                <button id="menu-toggle" class="text-xl focus:outline-none">☰</button>
+
+                <nav id="side-nav" class="hidden bg-[#028090] text-white shadow-md border-r border-[#028090] h-screen fixed top-0 left-0 min-w-[250px] py-6 px-4 overflow-auto z-[999]">
+                    <!-- Close Button -->
+                    <div class="flex justify-end -mt-3">
+                        <button id="closeBtn" class="text-gray-300 hover:text-white transition cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                <line x1="18" y1="6" x2="6" y2="18" />
+                                <line x1="6" y1="6" x2="18" y2="18" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Logo -->
+                    <div class="logo mt-4 font-[Mioge] text-[2rem] hover:text-[#028090] transition">
+                        <!-- <a href="#">VXLE</a> -->
+                        <a href="#" class="relative group w-[72px] h-auto">
+                            <img src="Portfolio logos/dirty-white.png" class="w-[72px] block group-hover:hidden" alt="default logo">
+                            <img src="Portfolio logos/blue-green.png" class="w-[72px] hidden group-hover:block"  alt="">
+                        </a>
+                    </div>
+
+                    <!-- Navigation Links -->
+                    <ul class="mt-6 space-y-2">
+                        <li>
+                            <a href="#about-me" class="font-medium text-[15px] block hover:text-[#028090] hover:bg-[#FFFFEF] rounded px-4 py-2 transition-all">ABOUT ME</a>
+                        </li>
+                        <li>
+                            <a href="#projects-portfolio" class="font-medium text-[15px] block hover:text-[#028090] hover:bg-[#FFFFEF] rounded px-4 py-2 transition-all">PROJECTS / PORTFOLIO</a>
+                        </li>
+                        <li>
+                            <a href="#" class="font-medium text-[15px] block hover:text-[#028090] hover:bg-[#FFFFEF] rounded px-4 py-2 transition-all">SKILLS</a>
+                        </li>
+                        <li>
+                            <a href="#" class="font-medium text-[15px] block hover:text-[#028090] hover:bg-[#FFFFEF] rounded px-4 py-2 transition-all">CONTACT ME</a>
+                        </li>
+                    </ul>
+
+                    <!-- Resume Section -->
+                    <div class="mt-6 text-center">
+                        <h6 class="text-xs mb-2">Downloadable CV</h6>
+                        <a href="Resume/Lawrence Emman Villeta - Resume.pdf" class="inline-flex p-3 items-center text-center border border-[#FFFFEF] text-[12px] hover:text-[#028090] hover:bg-[#FFFFEF] transition cursor-pointer px-2 rounded font-[500]" download> Resume / Downloadable CV
+                        </a>
+                    </div>
+                </nav>
+        </div>
+    </nav>
+    
+
+    <!-- 1ST SECTION / GREETINGS -->
+    <section class="relative min-h-[600px] flex justify-center m-0 pt-[72px] overflow-hidden">
+        <div class="container grid grid-cols-12 ">
+            <div class="col-span-12 md:col-span-6 font-[Varela] flex items-center justify-center md:items-start md:ms-25 flex-col z-40 md:-mt-5" data-aos="fade-right" data-aos-duration="800">
+                <h3 class="text-center md:text-start text-[2rem] md:text-[2.5rem] font-bold">Hello, I'm <span class="text-[#028090]">Emman</span></h3>
+                <h3 class="text-center md:text-start text-[1.3rem] font-bold text-[#028090] -mt-1 mb-2">Web Developer & Graphic Designer</span></h3>
+                <p class="text-center md:text-start px-2 md:px-0 text-[14px] md:text-[16px]">I’m an aspiring web developer and graphic designer, I aim to create designs that communicate and interfaces that feel effortless. I enjoy creating experiences that are both useful and beautiful.</p>
+                <!-- <p class="text-center px-2 text-[14px] md:text-[18px]">Let’s build something awesome together.</p> -->
+
+
+                <!-- SOCIAL MEDIA ACCOUNTS -->
+                <div class="flex gap-2 md:gap-0 mt-5 md:mt-10 md:grid grid-cols-12">
+                    <div class="col-span-12 md:col-span-4">
+                        <a href="#about-me" class="border border-[#028090] py-3 px-5 rounded-md flex gap-3 bg-[#028090] text-[#FFFFEF] text-xs hover:bg-[#0391a3] hover:border-[#0391a3]">GET IN TOUCH <img src="img/label img/arrow-forward.png" class="w-4" alt="arrow-forward"></a>
+                    </div>
+
+                    <div class="col-span-12 md:col-span-8 mb-5 flex justify-start items-center gap-1 md:ml-3">
+                        <a href="https://www.facebook.com/HateDis.Layf24" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 hover:opacity-[.9]" fill="none" height="17" viewBox="0 0 17 17" width="17"><path d="M14.1762 0.823608H2.68022C2.08296 0.823608 1.51015 1.06087 1.08782 1.4832C0.665486 1.90554 0.428223 2.47834 0.428223 3.07561V14.5716C0.428223 15.1689 0.665486 15.7417 1.08782 16.164C1.51015 16.5863 2.08296 16.8236 2.68022 16.8236H7.91222V10.9836H5.93422V8.70561H7.91222V7.02761C7.91222 6.07661 8.17522 5.33761 8.70122 4.81261C9.22722 4.28661 9.94022 4.02261 10.8412 4.02261C11.7432 4.02261 12.3272 4.05761 12.5942 4.12361V6.15161H11.3922C10.9582 6.15161 10.6622 6.24361 10.5032 6.42761C10.3452 6.61061 10.2662 6.88661 10.2662 7.25361V8.70561H12.5192L12.2192 10.9836H10.2662V16.8236H14.1762C14.7735 16.8236 15.3463 16.5863 15.7686 16.164C16.191 15.7417 16.4282 15.1689 16.4282 14.5716V3.07561C16.4282 2.47834 16.191 1.90554 15.7686 1.4832C15.3463 1.06087 14.7735 0.823608 14.1762 0.823608Z" fill="#028090"/></svg>
+                        </a>
+
+                        <a href="https://www.instagram.com/emmaaaaaaaannnn/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 hover:opacity-[.9] rounded-xl" fill="#028090" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink" height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve"><path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-193.446,81c-47.527,0 -53.487,0.201 -72.152,1.053c-18.627,0.85 -31.348,3.808 -42.48,8.135c-11.508,4.472 -21.267,10.456 -30.996,20.184c-9.729,9.729 -15.713,19.489 -20.185,30.996c-4.326,11.132 -7.284,23.853 -8.135,42.48c-0.851,18.665 -1.052,24.625 -1.052,72.152c0,47.527 0.201,53.487 1.052,72.152c0.851,18.627 3.809,31.348 8.135,42.48c4.472,11.507 10.456,21.267 20.185,30.996c9.729,9.729 19.488,15.713 30.996,20.185c11.132,4.326 23.853,7.284 42.48,8.134c18.665,0.852 24.625,1.053 72.152,1.053c47.527,0 53.487,-0.201 72.152,-1.053c18.627,-0.85 31.348,-3.808 42.48,-8.134c11.507,-4.472 21.267,-10.456 30.996,-20.185c9.729,-9.729 15.713,-19.489 20.185,-30.996c4.326,-11.132 7.284,-23.853 8.134,-42.48c0.852,-18.665 1.053,-24.625 1.053,-72.152c0,-47.527 -0.201,-53.487 -1.053,-72.152c-0.85,-18.627 -3.808,-31.348 -8.134,-42.48c-4.472,-11.507 -10.456,-21.267 -20.185,-30.996c-9.729,-9.728 -19.489,-15.712 -30.996,-20.184c-11.132,-4.327 -23.853,-7.285 -42.48,-8.135c-18.665,-0.852 -24.625,-1.053 -72.152,-1.053Zm0,31.532c46.727,0 52.262,0.178 70.715,1.02c17.062,0.779 26.328,3.63 32.495,6.025c8.169,3.175 13.998,6.968 20.122,13.091c6.124,6.124 9.916,11.954 13.091,20.122c2.396,6.167 5.247,15.433 6.025,32.495c0.842,18.453 1.021,23.988 1.021,70.715c0,46.727 -0.179,52.262 -1.021,70.715c-0.778,17.062 -3.629,26.328 -6.025,32.495c-3.175,8.169 -6.967,13.998 -13.091,20.122c-6.124,6.124 -11.953,9.916 -20.122,13.091c-6.167,2.396 -15.433,5.247 -32.495,6.025c-18.45,0.842 -23.985,1.021 -70.715,1.021c-46.73,0 -52.264,-0.179 -70.715,-1.021c-17.062,-0.778 -26.328,-3.629 -32.495,-6.025c-8.169,-3.175 -13.998,-6.967 -20.122,-13.091c-6.124,-6.124 -9.917,-11.953 -13.091,-20.122c-2.396,-6.167 -5.247,-15.433 -6.026,-32.495c-0.842,-18.453 -1.02,-23.988 -1.02,-70.715c0,-46.727 0.178,-52.262 1.02,-70.715c0.779,-17.062 3.63,-26.328 6.026,-32.495c3.174,-8.168 6.967,-13.998 13.091,-20.122c6.124,-6.123 11.953,-9.916 20.122,-13.091c6.167,-2.395 15.433,-5.246 32.495,-6.025c18.453,-0.842 23.988,-1.02 70.715,-1.02Zm0,53.603c-49.631,0 -89.865,40.234 -89.865,89.865c0,49.631 40.234,89.865 89.865,89.865c49.631,0 89.865,-40.234 89.865,-89.865c0,-49.631 -40.234,-89.865 -89.865,-89.865Zm0,148.198c-32.217,0 -58.333,-26.116 -58.333,-58.333c0,-32.217 26.116,-58.333 58.333,-58.333c32.217,0 58.333,26.116 58.333,58.333c0,32.217 -26.116,58.333 -58.333,58.333Zm114.416,-151.748c0,11.598 -9.403,20.999 -21.001,20.999c-11.597,0 -20.999,-9.401 -20.999,-20.999c0,-11.598 9.402,-21 20.999,-21c11.598,0 21.001,9.402 21.001,21Z"/></svg>
+                        </a>
+
+                        <a href="https://github.com/Emmaannnn" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 hover:opacity-[.9]" fill="none" height="25" viewBox="0 0 25 25" width="25"><path clip-rule="evenodd" d="M15.7481 24.9471C24.0901 24.7061 24.9111 22.9501 24.9111 12.9811C24.9111 1.98108 23.9111 0.981079 12.9111 0.981079C1.91113 0.981079 0.911133 1.98108 0.911133 12.9811C0.911133 22.9761 1.73713 24.7151 10.1391 24.9491C10.2121 24.8581 10.2391 24.7441 10.2391 24.6281C10.2391 24.3781 10.2291 21.8121 10.2241 20.9291C7.18713 21.5681 6.54613 19.5101 6.54613 19.5101C6.04913 18.2881 5.33313 17.9621 5.33313 17.9621C4.34213 17.3061 5.40813 17.3191 5.40813 17.3191C6.50413 17.3941 7.08113 18.4101 7.08113 18.4101C8.05513 20.0271 9.63713 19.5601 10.2591 19.2891C10.3581 18.6061 10.6401 18.1391 10.9521 17.8751C8.52713 17.6081 5.97813 16.7001 5.97813 12.6451C5.97813 11.4901 6.40413 10.5461 7.10213 9.80608C6.98913 9.53808 6.61513 8.46208 7.20913 7.00608C7.20913 7.00608 8.12613 6.72108 10.2121 8.09008C11.0831 7.85508 12.0171 7.73808 12.9461 7.73408C13.8731 7.73808 14.8071 7.85508 15.6801 8.09008C17.7651 6.72108 18.6801 7.00608 18.6801 7.00608C19.2761 8.46208 18.9011 9.53808 18.7881 9.80608C19.4881 10.5461 19.9111 11.4901 19.9111 12.6451C19.9111 16.7101 17.3581 17.6051 14.9251 17.8661C15.3171 18.1931 15.6661 18.8391 15.6661 19.8261C15.6661 20.7721 15.6601 22.4451 15.6561 23.5541C15.6541 24.1031 15.6531 24.5131 15.6531 24.6281C15.6531 24.7371 15.6821 24.8521 15.7481 24.9471V24.9471Z" fill="#028090" fill-rule="evenodd"/></svg>
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="col-span-12 mt-5 md:col-span-6 md:mt-0 items-center ">
+                <div class="relative w-fit md:h-full overflow-x-hidden">
+
+                    <img id="imgLeftCorner" class="absolute z-2 rounded-xl shadow-1x20" src="img/leftcorner.png" alt="">
+                    <img id="imgSecondRight" class="absolute z-2 rounded-xl shadow-1x20 md:hidden" src="img/secondright.png" alt="">
+                    <img id="imgRightCorner" class="hidden md:block absolute z-2 rounded-xl shadow-1x20" src="img/rightcorner.png" alt="">
+                    <img class="z-1 rounded-xl" src="img/dpdp.jpg" alt="" data-aos="fade-down" data-aos-duration="800">
+                    
+                </div>
+
+                <div class="absolute bottom-0 right-0 w-full h-40 z-40 bg-gradient-to-t from-[#FFFFEF] via-[trasparent] via-[#trasparent] to-[transparent] pointer-events-none"></div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- 2ND SECTION / ABOUT ME-->
+    <section id="about-me" class="relative flex justify-center min-h-[600px] w-full px-5 md:pr-10 m-0 pb-15 overflow-hidden">
+        <div class="container md:grid grid-cols-12 gap-5 pt-15 md:pt-25 ">
+            
+            <div class="col-span-6 md:ms-10 flex justify-center items-center pb-5 px-5 md:px-10">
+                <!-- <div class="absolute top-0 w-full cover h-50 z-40 bg-gradient-to-b object-cover from-[#FFFFEF] via-[#FFFFEF] via-[##FFFFEF] to-[transparent] pointer-events-none"></div> -->
+                <!-- <img id="imgLeftCorner" class="absolute z-2 rounded-xl shadow-1x20" src="img/left.png" alt=""> -->
+                <img id="about-me-image" class="absolute -z-2 rounded-xl shadow-1x20 hidden mr-50 md:block h-180 overflow-hidden" src="img/right.png" alt="">
+                <img src="img/trial-pic.jpg" class="h-110 -z-3 md:h-150 w-130 rounded-bl-full rounded-br-full md:rounded-bl-[20px] md:rounded-br-0 md:mt-8 md:rounded-br-[0] md:rounded-tl-[20px] object-cover shadow-1x20" alt="" style="box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">
+            </div>
+
+            <div class="col-span-6 mt-9 font-[Varela] z-40 border-t border-t-2 items-center border-b-2 border-[#028090] px-5 md:py-20 md:p-10" data-aos="fade-left" data-aos-duration="800">
+                <div class="about-me-title flex items-center justify-start text-[#028090] md:-ml-10 my-5 md:my-0">
+                    <div class="h-1 w-8 bg-[#028090] -ml-5 mr-3"></div>
+                    <h1 class="font-bold text-[1.4rem]">ABOUT ME</h1>
+                </div>
+                
+                <div class="sub-about-me my-4 -ml-4 text-justify">
+                    <p>
+                        Hi, I'm Emman — a passionate and detail-oriented Web Developer and Graphic Designer dedicated to turning ideas into visually engaging and functional digital experiences.
+                    </p>
+                    
+                    <p class="mt-4">
+                        With a strong foundation in HTML, CSS, JavaScript, and design tools like Photoshop and Illustrator, I enjoy creating responsive websites that combine clean code with creative visuals. Whether it’s building from scratch or bringing a mockup to life, I focus on user-friendly, intuitive design that tells a story.
+                    </p>
+
+                    <p class="mt-4">
+                        I’m always learning and exploring new tools and technologies to stay ahead in this fast-evolving industry. When I’m not coding or designing, you’ll find me sketching concepts, editing videos, or experimenting with digital art.
+                    </p>
+
+                    <p class="mt-4">
+                        Let's build something great together.
+                    </p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <!-- <div class="absolute bottom-0 right-0 w-full h-40 z-40 bg-gradient-to-t from-[#028090] via-[trasparent] via-[#trasparent] to-[transparent] pointer-events-none"></div> -->
+    </section>
+
+
+
+
+
+
+    <!-- 3RD SECTION / PROJECTS / PORTFOLIO -->
+    <section id="projects-portfolio" class="min-h-[400px] z-4 md:my-0 flex flex-col justify-center items-center text-[#FFFFEF] pb-10 pt-5 font-[Poppins] overflow-hidden">
+        <div class="container">
+            <!-- FIRST ROW OF PROJECTS -->
+            <div class="flex flex-col justify-center items-center rounded-lg mx-4 pb-9">
+                <div class="px-15 lg:px-30 group overflow-hidden text-center" data-aos="fade-up" data-aos-duration="800" data="100">
+                    <h1 class="font-[Varela] text-3xl md:text-4xl font-[900] text-[#028090]">WEBSITE</h1>
+                    <h1 class="font-[Varela] text-3xl md:text-4xl font-[900] text-[#028090] transform md:scale-x-150 lg:scale-x-200">PORTFOLIO</h1>
+                </div>
+
+                <div class="flex flex-wrap justify-center items-center mt-10 lg:px-20 gap-5 text-[#028090]">
+                    <div class="col-span-12 md:col-span-4 rounded-lg cursor-pointer w-80 lg:w-85 group transition-shadow duration-300 hover:shadow-[0_5px_15px_rgba(0,0,0,0.35)] shadow-[0_1px_3px_rgba(0,0,0,0.12),_0_1px_2px_rgba(0,0,0,0.24)]" data-aos="fade-in" data-aos-duration="800" data-aos-delay="100">
+                        <a href="https://emmaannnn.github.io/Rock-Paper-Scissors/" target="_blank">
+                            <div class="relative overflow-hidden bg-black rounded-t-md">
+                                <img src="img/batobatopick-logo.png" class="h-65 md:h-70 w-full object-cover transition duration-300 ease-in-out group-hover:opacity-50 group-hover:scale-110" alt="">
+                                <button class="absolute inset-0 flex justify-center items-center pointer-events-none invisible group-hover:visible"><span class="border py-2 px-8 rounded-full border-[#FFFFEF] text-[#FFFFEF]">View Details</span></button>
+                            </div>
+
+                            <div class="h-20 py-4 px-3 ps-3 text-black rounded-bl-lg rounded-br-lg bg-[#FFFFEF] w-full">
+                                <div class="grid grid-cols-12">
+                                    <div class="col-span-10 transition duration-300 group-hover:scale-105 ps-3">
+                                        <h1 class="font-[Varela] font-bold">BATO-BATO PICK</h1>
+                                        <h5 class="font-[Montserrat] text-sm font-[700] opacity-[0.7]">AVAILABLE</h5>
+                                    </div>
+                                    <div class="col-span-2 flex justify-center items-center">
+                                        <button class="border border-none transition duration-300 group-hover:scale-150 p-3 rounded-full cursor-pointer">
+                                            <svg class="h-4 w-4 cursor-pointer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 256 256" height="256px" id="Layer_1" version="1.1" viewBox="0 0 256 256" width="256px" xml:space="preserve"><path d="M164.525,222.138l89.6-89.6c2.5-2.5,2.5-6.551,0-9.051l-89.6-89.6c-2.5-2.5-6.551-2.5-9.051,0s-2.5,6.743,0,9.243  L234.15,122H6.4c-3.535,0-6.4,2.466-6.4,6s2.865,6,6.4,6h227.75l-78.676,78.881c-1.25,1.25-1.875,2.992-1.875,4.629  s0.625,3.326,1.875,4.576C157.975,224.586,162.025,224.638,164.525,222.138z"/></svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-span-12 md:col-span-4 bg-[#FFFFEF] rounded-lg w-80 lg:w-85 cursor-pointer group transition-shadow duration-300 hover:shadow-[0_5px_15px_rgba(0,0,0,0.35)] shadow-[0_1px_3px_rgba(0,0,0,0.12),_0_1px_2px_rgba(0,0,0,0.24)]" data-aos="fade-in" data-aos-duration="800" data-aos-delay="100">
+                        <div class="relative overflow-hidden bg-black rounded-t-md">
+                            <img src="img/unavailable.png" class="h-65 md:h-70 w-full object-cover transition duration-300 ease-in-out group-hover:opacity-50 group-hover:scale-110" alt="">
+                            <button class="absolute inset-0 flex justify-center items-center pointer-events-none invisible group-hover:visible"><span class="border py-2 px-8 rounded-full border-[#FFFFEF] text-[#FFFFEF]">View Details</span></button>
+                        </div>
+
+                        <div class="h-20 py-4 px-3 ps-3 text-black rounded-bl-lg rounded-br-lg bg-[#FFFFEF] w-full">
+                            <div class="grid grid-cols-12">
+                                <div class="col-span-10 transition duration-300 group-hover:scale-105 ps-3">
+                                    <h1 class="font-[Varela] font-bold">SOON</h1>
+                                    <h5 class="font-[Montserrat] text-sm font-[700] opacity-[0.7]">NOT YET AVAILABLE</h5>
+                                </div>
+                                <div class="col-span-2 flex justify-center items-center">
+                                    <button class="border border-none transition duration-300 group-hover:scale-150 p-3 rounded-full cursor-pointer">
+                                        <svg class="h-4 w-4 cursor-pointer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 256 256" height="256px" id="Layer_1" version="1.1" viewBox="0 0 256 256" width="256px" xml:space="preserve"><path d="M164.525,222.138l89.6-89.6c2.5-2.5,2.5-6.551,0-9.051l-89.6-89.6c-2.5-2.5-6.551-2.5-9.051,0s-2.5,6.743,0,9.243  L234.15,122H6.4c-3.535,0-6.4,2.466-6.4,6s2.865,6,6.4,6h227.75l-78.676,78.881c-1.25,1.25-1.875,2.992-1.875,4.629  s0.625,3.326,1.875,4.576C157.975,224.586,162.025,224.638,164.525,222.138z"/></svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                    <div class="col-span-12 md:col-span-4 bg-[#FFFFEF] rounded-lg w-80 lg:w-85 cursor-pointer group transition-shadow duration-300 hover:shadow-[0_5px_15px_rgba(0,0,0,0.35)] shadow-[0_1px_3px_rgba(0,0,0,0.12),_0_1px_2px_rgba(0,0,0,0.24)]" data-aos="fade-in" data-aos-duration="800" data-aos-delay="100">
+                        <div class="relative overflow-hidden bg-black rounded-t-md">
+                            <img src="img/unavailable.png" class="h-65 md:h-70 w-full object-cover transition duration-300 ease-in-out group-hover:opacity-50 group-hover:scale-110" alt="">
+                            <button class="absolute inset-0 flex justify-center items-center pointer-events-none invisible group-hover:visible"><span class="border py-2 px-8 rounded-full border-[#FFFFEF] text-[#FFFFEF]">View Details</span></button>
+                        </div>
+
+                        <div class="h-20 py-4 px-3 ps-3 text-black rounded-bl-lg rounded-br-lg bg-[#FFFFEF] w-full">
+                            <div class="grid grid-cols-12">
+                                <div class="col-span-10 transition duration-300 group-hover:scale-105 ps-3">
+                                    <h1 class="font-[Varela] font-bold">SOON</h1>
+                                    <h5 class="font-[Montserrat] text-sm font-[700] opacity-[0.7]">NOT YET AVAILABLE</h5>
+                                </div>
+                                <div class="col-span-2 flex justify-center items-center">
+                                    <button class="border border-none transition duration-300 group-hover:scale-150 p-3 rounded-full cursor-pointer">
+                                        <svg class="h-4 w-4 cursor-pointer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 256 256" height="256px" id="Layer_1" version="1.1" viewBox="0 0 256 256" width="256px" xml:space="preserve"><path d="M164.525,222.138l89.6-89.6c2.5-2.5,2.5-6.551,0-9.051l-89.6-89.6c-2.5-2.5-6.551-2.5-9.051,0s-2.5,6.743,0,9.243  L234.15,122H6.4c-3.535,0-6.4,2.466-6.4,6s2.865,6,6.4,6h227.75l-78.676,78.881c-1.25,1.25-1.875,2.992-1.875,4.629  s0.625,3.326,1.875,4.576C157.975,224.586,162.025,224.638,164.525,222.138z"/></svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+            <!-- SECOND ROW OF PROJECTS -->
+            <div class="px-8 lg:px-25 group rounded-lg mt-15">
+                <div class="flex items-center justify-center md:justify-between">
+                    <div class="h-1 hidden md:block md:w-[60%] bg-[#028090] -ml-5 mr-3"></div>
+
+                    <div class="md:text-end text-center z-2 md:me-5 me-0 overflow-hidden" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
+                        <h1 class="font-[Varela] text-3xl md:text-4xl font-[900] text-[#028090]">GRAPHIC DESIGN</h1>
+                        <h1 class="font-[Varela] text-3xl md:text-4xl font-[900] text-[#028090]">PORTFOLIO</h1>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap justify-center items-center gap-3 pt-10 ">
+                    <div data-aos="fade-up" data-aos-duration="800" class="cursor-pointer overflow-hidden rounded-md md:h-[250px] md:w-[254px] hover:scale-106 transition-all duration-300 hover:shadow-[0_5px_15px_rgba(0,0,0,0.35)] shadow-[0_1px_3px_rgba(0,0,0,0.12),_0_1px_2px_rgba(0,0,0,0.24)]" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;" onclick="openModal('img/Image Portfolio/4.jpg')">
+                        <img src="img/Image Portfolio/4.jpg" class="h-full w-full hover:scale-110 object-cover ease-in-out duration-300 transition" alt="">
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" class="cursor-pointer overflow-hidden rounded-md md:h-[250px] md:w-[254px] hover:scale-106 transition-all duration-300 hover:shadow-[0_5px_15px_rgba(0,0,0,0.35)] shadow-[0_1px_3px_rgba(0,0,0,0.12),_0_1px_2px_rgba(0,0,0,0.24)]" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;" onclick="openModal('img/Image Portfolio/7.jpg')">
+                        <img src="img/Image Portfolio/7.jpg" class="h-full w-full hover:scale-110 object-cover ease-in-out duration-300 transition" alt="">
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" class="cursor-pointer overflow-hidden rounded-md md:h-[250px] md:w-[254px] hover:scale-106 transition-all duration-300 hover:shadow-[0_5px_15px_rgba(0,0,0,0.35)] shadow-[0_1px_3px_rgba(0,0,0,0.12),_0_1px_2px_rgba(0,0,0,0.24)]" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;" onclick="openModal('img/Image Portfolio/9.jpg')">
+                        <img src="img/Image Portfolio/9.jpg" class="h-full w-full hover:scale-110 object-cover ease-in-out duration-300 transition" alt="">
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" class="cursor-pointer overflow-hidden rounded-md md:h-[250px] md:w-[254px] hover:scale-106 transition-all duration-300 hover:shadow-[0_5px_15px_rgba(0,0,0,0.35)] shadow-[0_1px_3px_rgba(0,0,0,0.12),_0_1px_2px_rgba(0,0,0,0.24)]" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;" onclick="openModal('img/Image Portfolio/5.jpg')">
+                        <img src="img/Image Portfolio/5.jpg" class="h-full w-full hover:scale-110 object-cover ease-in-out duration-300 transition" alt="">
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" class="cursor-pointer overflow-hidden rounded-md md:h-[250px] md:w-[254px] hover:scale-106 transition-all duration-300 hover:shadow-[0_5px_15px_rgba(0,0,0,0.35)] shadow-[0_1px_3px_rgba(0,0,0,0.12),_0_1px_2px_rgba(0,0,0,0.24)]" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;" onclick="openModal('img/Image Portfolio/10.jpg')">
+                        <img src="img/Image Portfolio/10.jpg" class="h-full w-full hover:scale-110 object-cover ease-in-out duration-300 transition" alt="">
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="500" class="cursor-pointer overflow-hidden rounded-md md:h-[250px] md:w-[254px] hover:scale-106 transition-all duration-300 hover:shadow-[0_5px_15px_rgba(0,0,0,0.35)] shadow-[0_1px_3px_rgba(0,0,0,0.12),_0_1px_2px_rgba(0,0,0,0.24)]" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;" onclick="openModal('img/Image Portfolio/6.jpg')">
+                        <img src="img/Image Portfolio/6.jpg" class="h-full w-full hover:scale-110 object-cover ease-in-out duration-300 transition" alt="">
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="600" class="cursor-pointer overflow-hidden rounded-md md:h-[250px] md:w-[254px] hover:scale-106 transition-all duration-300 hover:shadow-[0_5px_15px_rgba(0,0,0,0.35)] shadow-[0_1px_3px_rgba(0,0,0,0.12),_0_1px_2px_rgba(0,0,0,0.24)]" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;" onclick="openModal('img/Image Portfolio/11.jpg')">
+                        <img src="img/Image Portfolio/11.jpg" class="h-full w-full hover:scale-110 object-cover ease-in-out duration-300 transition" alt="">
+                    </div>
+                    <a href="#projects-portfolio">
+                        <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="700" class="relative bg-black cursor-pointer flex justify-center md:h-[250px] md:w-[254px] hover:scale-106 rounded-md items-center border border-none group overflow-hidden transition-all duration-300" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+                            <h1 class="absolute text-white font-[Poppins] font-[600]">See more</h1>
+                            <img src="img/Image Portfolio/8.jpg" class="rounded-md h-full w-full opacity-30 object-cover hover:scale-110 ease-in-out duration-300 transition" alt="">
+                        </div>
+                    </a>
+
+                    <!-- FULL SCREEN IMAGE -->
+                    <div id="full-screen-modal" class="fixed inset-0 bg-[rgba(0,0,0,0.7)] backdrop-blur-[1px] flex justify-center items-center hidden z-50">
+
+                    </div>
+
+                    <div class="h-1 w-[100%] bg-[#028090] md:-ml-5 md:mr-3 mt-15" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200"></div>
+                </div>
+            </div>
+        </div>
+
+        
+    </section>
+
+        
+    
+    <!-- <section class="min-h-[400px] p-0 flex flex-col justify-center items-center text-[#FFFFEF] py-10 font-[Poppins] bg-[#028090] overflow-hidden">
+        <div class="container">
+
+        </div>
+    </section> -->
+        
+
+
+
+
+
+    <section id="skills" class="h-min-[600px] py-15 flex justify-center items-center">
+        
+        <div class="container">
+            
+        </div>
+        
+    </section>
+
+
+
+
+    <script src="script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+</html>
